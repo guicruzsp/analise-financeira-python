@@ -62,7 +62,7 @@ plt.show()
 
 # Here we will import IPCA and SELIC data
 
-# Lets define a function to import data from their database
+# Lets define a function to import data from their database (This function was obtained from https://colab.research.google.com/drive/1_t6-vO_Mv1Iv_4Wykexeb81FJkOPY-CI)
 def consulta_bc(codigo_bcb):
   url = 'http://api.bcb.gov.br/dados/serie/bcdata.sgs.{}/dados?formato=json'.format(codigo_bcb)
   df = pd.read_json(url)
